@@ -1,3 +1,8 @@
+import { FirebaseListPage } from './../pages/firebase-list/firebase-list';
+import { NetworkPage } from './../pages/network/network';
+import { QrScanerPage } from './../pages/qr-scaner/qr-scaner';
+import { GeolocationMapsPage } from './../pages/geolocation-maps/geolocation-maps';
+import { CameraPage } from './../pages/camera/camera';
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -22,7 +27,12 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage }
+      { title: 'List', component: ListPage },
+      { title: 'Camera', component: CameraPage },
+      { title: 'GeolocationMaps', component: GeolocationMapsPage },
+      { title: 'QrCode', component: QrScanerPage },
+      { title: 'Network', component: NetworkPage },
+      { title: 'FirebaseDB', component: FirebaseListPage }
     ];
 
   }

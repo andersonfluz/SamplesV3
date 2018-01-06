@@ -6,7 +6,9 @@
   </ion-header>
 
   <ion-content>
-    <ion-list>
+    <!-- Side Menu -->
+    <!--<side-menu-content [settings]="sideMenuSettings" [options]="options" (selectOption)="selectOption($event)"></side-menu-content>    -->
+   <ion-list>
       <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
         {{p.title}}
       </button>

@@ -1,0 +1,34 @@
+<!--
+  Generated template for the NetworkPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Network</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <button ion-button (click)="testConnection()">Test Connection</button>
+  <ion-item>
+    <ion-label>Watch Connection</ion-label>
+    <ion-toggle checked="false" (check)="watchConnection()"></ion-toggle>
+  </ion-item>
+  <ion-list>
+    <ion-item>
+      <ion-label>Wifi Connection</ion-label>
+      <ion-checkbox [(ngModel)]="wifi" color="dark"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Mobile Connection</ion-label>
+      <ion-checkbox [(ngModel)]="mobile" color="secondary"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+</ion-content>
